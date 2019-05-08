@@ -1,5 +1,5 @@
 
-node('dev43') {
+node('testing') {
 // Delete the workspace
 //deleteDir()
 stage('Retrieve source code') {
