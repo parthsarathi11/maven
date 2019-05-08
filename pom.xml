@@ -44,16 +44,16 @@
 </plugins>
     <finalName>vsvyadav-${build.number}</finalName>
   </build>
-  <distributionManagement>
+   <distributionManagement>
     <repository>
-      <id>nexus</id>
-      <name>vardhanRelese</name>
-      <url>http://3.86.191.241:8081/repository/vardhanRelese/</url>
+      <id>nexus-release</id>
+      <name>secondrelease</name>
+      <url>http://54.164.123.241:8081/nexus/content/repositories/nexus-release/</url>
     </repository>
 	<snapshotRepository>
-      <id>nexus</id>
-      <name>vardhanSnap</name>
-      <url>http://3.86.191.241:8081/repository/vardhanSnap/</url>
+      <id>nexus-snapshot</id>
+      <name>secondproject</name>
+      <url>http://54.164.123.241:8081/nexus/content/repositories/nexus-snapshot/</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
