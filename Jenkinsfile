@@ -8,11 +8,11 @@ stage('Retrieve source code') {
     }
 try {
     stage('Maven Build') {
-      {
+      
         sh "mvn clean deploy -Dbuild.number=${BUILD_NUMBER}"
         sh "/bin/mv -f $WORKSPACE/target/*.war $WORKSPACE/Build-${env.BUILD_NUMBER}/vsvyadav_${env.BRANCH_NAME}${env.BUILD_NUMBER}.war"
         sh "/bin/cp -f $WORKSPACE/Build-${env.BUILD_NUMBER}/vsvyadav_${env.BRANCH_NAME}${env.BUILD_NUMBER}.war $WORKSPACE/vsvyadav.war"
-       }
+       
     }
    stage('Deploy') {
         sh "/bin/mv -f $WORKSPACE/vsvyadav.war /opt/tomcat/webapps/"
