@@ -1,4 +1,3 @@
-
 node('testing') {
 // Delete the workspace
 //deleteDir()
