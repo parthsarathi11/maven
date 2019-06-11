@@ -1,4 +1,4 @@
-node('testing') {
+node('maven') {
 // Delete the workspace
 //deleteDir()
 stage('Retrieve source code') {
